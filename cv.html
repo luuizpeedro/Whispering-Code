@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currículo - Luiz Pedro Oliveira de Souza</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap");
+      body {
+        font-family: "Inter", sans-serif;
+        -webkit-print-color-adjust: exact;
+        color-adjust: exact;
+      }
+      .section-title {
+        border-bottom: 2px solid #3b82f6;
+      }
+      .sidebar {
+        background-color: #f3f4f6; /* gray-100 */
+      }
+      @media print {
+        body {
+          margin: 0;
+          padding: 0;
+          -webkit-print-color-adjust: exact;
+          color-adjust: exact;
+        }
+        .no-print {
+          display: none;
+        }
+        .resume-container {
+          box-shadow: none;
+          margin: 0;
+          border: none;
+          width: 100%;
+          height: 100%;
+        }
+        .sidebar {
+          background-color: #f3f4f6 !important;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-200 text-gray-800">
+    <!-- Botão de Download -->
+    <div class="no-print container mx-auto text-center py-6">
+      <button
+        onclick="window.print()"
+        class="bg-blue-600 text-white font-bold py-2 px-5 rounded-lg hover:bg-blue-700 transition-colors duration-300 shadow-lg"
+      >
+        <i class="fas fa-download mr-2"></i> Baixar como PDF
+      </button>
+    </div>
+
+    <!-- Container do Currículo -->
+    <div
+      class="resume-container container mx-auto max-w-4xl bg-white my-6 shadow-2xl border border-gray-300 flex flex-col md:flex-row"
+    >
+      <!-- Coluna da Esquerda (Sidebar) -->
+      <aside class="sidebar w-full md:w-1/3 p-6">
+        <div class="flex flex-col items-center">
+          <img
+            src="https://placehold.co/400x400/EBF4FF/76A9FA?text=LP"
+            alt="Foto de Luiz Pedro"
+            class="rounded-full w-32 h-32 mb-4 border-4 border-white shadow-md"
+          />
+          <h1 class="text-2xl font-bold text-blue-600 text-center">
+            Luiz Pedro Oliveira de Souza
+          </h1>
+        </div>
+
+        <div class="mt-6">
+          <h2
+            class="text-lg font-bold text-gray-700 pb-1 mb-2 border-b-2 border-gray-300"
+          >
+            Contato
+          </h2>
+          <div class="space-y-2 text-sm">
+            <p>
+              <i
+                class="fas fa-map-marker-alt mr-2 text-blue-500 w-4 text-center"
+              ></i
+              >Piracicaba, SP
+            </p>
+            <p>
+              <i class="fas fa-phone-alt mr-2 text-blue-500 w-4 text-center"></i
+              >(19) 98327-3070
+            </p>
+            <p>
+              <a href="mailto:luuiz.p2@gmail.com" class="hover:text-blue-600"
+                ><i
+                  class="fas fa-envelope mr-2 text-blue-500 w-4 text-center"
+                ></i
+                >luuiz.p2@gmail.com</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/luuizpeedro"
+                target="_blank"
+                class="hover:text-blue-600"
+                ><i
+                  class="fab fa-linkedin mr-2 text-blue-500 w-4 text-center"
+                ></i
+                >LinkedIn</a
+              >
+            </p>
+            <p>
+              <a
+                href="https://github.com/luuizpeedro"
+                target="_blank"
+                class="hover:text-blue-600"
+                ><i class="fab fa-github mr-2 text-blue-500 w-4 text-center"></i
+                >GitHub</a
+              >
+            </p>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <h2
+            class="text-lg font-bold text-gray-700 pb-1 mb-2 border-b-2 border-gray-300"
+          >
+            Competências Técnicas
+          </h2>
+          <ul class="text-sm space-y-1">
+            <li>
+              <span class="font-semibold">Linguagens:</span> Delphi, SQL, JS
+            </li>
+            <li><span class="font-semibold">Web:</span> HTML5, CSS3</li>
+            <li>
+              <span class="font-semibold">Bancos de Dados:</span> DBISAM, SQL
+              Server, MySQL, SQLite
+            </li>
+            <li><span class="font-semibold">Ferramentas:</span> Git, Docker</li>
+            <li>
+              <span class="font-semibold">Segurança:</span> Análise de
+              vulnerabilidades
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-6">
+          <h2
+            class="text-lg font-bold text-gray-700 pb-1 mb-2 border-b-2 border-gray-300"
+          >
+            Formação
+          </h2>
+          <div class="text-sm">
+            <h3 class="font-bold">Gestão da Seg. e Defesa Cibernética</h3>
+            <p class="text-xs">Uninter – Cursando</p>
+          </div>
+          <div class="mt-3 text-sm">
+            <h3 class="font-bold">Análise e Desenv. de Sistemas</h3>
+            <p class="text-xs">Anhanguera – Concluído (2024)</p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Coluna da Direita (Conteúdo Principal) -->
+      <main class="w-full md:w-2/3 p-8">
+        <section class="mb-6">
+          <h2 class="text-2xl font-bold text-gray-700 pb-1 mb-3 section-title">
+            Resumo Profissional
+          </h2>
+          <p class="text-gray-700 leading-relaxed text-sm">
+            Desenvolvedor de software com foco em Delphi, apaixonado por
+            resolver problemas e construir soluções eficientes. Possuo
+            experiência prática no ciclo de vida de desenvolvimento, desde a
+            análise de requisitos até a manutenção, com forte atuação em Delphi
+            e bancos de dados relacionais (SQL e DBISAM). Busco uma oportunidade
+            para colaborar em projetos desafiadores, aplicando minha dedicação e
+            habilidade técnica para agregar valor à equipe.
+          </p>
+        </section>
+
+        <section class="mb-6">
+          <h2 class="text-2xl font-bold text-gray-700 pb-1 mb-3 section-title">
+            Experiência Profissional
+          </h2>
+          <div class="space-y-5 text-sm">
+            <div class="job">
+              <h3 class="text-md font-bold">Programador Delphi (Estágio)</h3>
+              <p class="text-xs text-gray-600">
+                HPRO Soluções em Software | Março 2024 – Presente
+              </p>
+              <ul class="list-disc list-inside mt-1 text-gray-700 space-y-1">
+                <li>
+                  Desenvolvimento e otimização de módulos para sistemas desktop
+                  em Delphi, focando em performance e UX.
+                </li>
+                <li>
+                  Criação de consultas e rotinas em bancos de dados (DBISAM e
+                  SQL Server).
+                </li>
+                <li>
+                  Participação no desenvolvimento de aplicações web (back-end e
+                  front-end).
+                </li>
+                <li>
+                  Colaboração em ambiente ágil para análise de requisitos e
+                  resolução de bugs.
+                </li>
+              </ul>
+            </div>
+            <div class="job">
+              <h3 class="text-md font-bold">Auxiliar de Contabilidade e TI</h3>
+              <p class="text-xs text-gray-600">Cerba | Janeiro 2024 – Atual</p>
+              <ul class="list-disc list-inside mt-1 text-gray-700 space-y-1">
+                <li>
+                  Suporte técnico à infraestrutura de TI (hardware e software).
+                </li>
+                <li>
+                  Coordenação da implementação de softwares com fornecedores.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="text-2xl font-bold text-gray-700 pb-1 mb-3 section-title">
+            Projetos
+          </h2>
+          <div class="space-y-4 text-sm">
+            <div>
+              <h3 class="text-md font-bold">
+                Sistema de Gestão de Tarefas (Pessoal)
+              </h3>
+              <p class="mt-1 text-gray-700">
+                Aplicação desktop em Delphi com banco de dados SQLite para
+                gerenciamento de tarefas, com funcionalidades de CRUD,
+                priorização e categorização.
+              </p>
+              <a
+                href="https://github.com/luuizpeedro/nome-do-projeto"
+                target="_blank"
+                class="text-blue-600 hover:underline text-xs"
+                >Ver no GitHub <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+            <div>
+              <h3 class="text-md font-bold">Website Portfólio (Acadêmico)</h3>
+              <p class="mt-1 text-gray-700">
+                Site pessoal responsivo para apresentar projetos, utilizando
+                HTML5, CSS3 (Flexbox/Grid) e JavaScript para interatividade.
+              </p>
+              <a
+                href="https://github.com/luuizpeedro/portfolio"
+                target="_blank"
+                class="text-blue-600 hover:underline text-xs"
+                >Ver no GitHub <i class="fas fa-external-link-alt"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
